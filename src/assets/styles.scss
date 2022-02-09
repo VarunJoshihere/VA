@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// App component
+
+.app-container {
+  height: 100vh;
+  background-color: rgb(243, 230, 214);
+  z-index: -1;
+}
+.option_bar{
+  display: flex;
+  // display: none;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  height: 3rem;
+  background-color: rgb(95, 95, 95);
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn{
+  background-color: rgb(164, 175, 177);
+  cursor: pointer;
+ 
+}
+.images{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  // resize: both;
+  // overflow: auto;
+  // transform: skew(-20deg); //parallellogram
+}
+.numbers{
+  position: absolute;
+  top:2rem;
+  left:2rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: red;
+  height: 4rem;
+  width: 4rem;
+  z-index: 1 !important;
+  resize: both;
+  overflow: auto;
+}
+.time{
+  margin-top: 10rem;
+}
+.app-container-content {
+  display: flex;
+  // justify-content: center;
+  // justify-content: space-evenly;
+  padding-top: 2rem;
+  margin-left: 2rem;
+  // align-items: center;
+  text-align: center;
+  min-height: 80vh;
+}
+
+//Video component
+
+.video-container {
+  position: relative;
+}
+
+.video-player {
+  width: 700px;
+  border-radius: 20px;
+}
+
+//ImageOverlay component
+
+.images img {
+  margin-top: 2rem;
+  z-index: 1;
+  // position: absolute;
+  height: 5rem;
+  width: 5rem;
+}
+
+.image1 {
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  margin-top: 1rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.image2 {
+  right: 0;
+  top: 0;
+}
+
+.image3 {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
